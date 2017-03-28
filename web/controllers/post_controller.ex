@@ -32,6 +32,8 @@ defmodule Tilex.PostController do
         conn
         |> put_flash(:info, "Post created")
         |> redirect(to: post_path(conn, :index))
+
+        Slack.post_notification(changeset.data)
       {:error, changeset} ->
         render(conn, "new.html", changeset: changeset)
     end
