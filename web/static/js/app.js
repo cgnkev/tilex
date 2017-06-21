@@ -23,4 +23,5 @@ import 'jquery.cookie';
 // import socket from "./socket"
 import tilex from './tilex';
 import like from './like';
+import syntax from './syntax_label';
 import ga from './google_analytics';

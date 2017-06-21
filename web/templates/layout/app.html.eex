@@ -24,6 +24,9 @@
     <meta name="twitter:description" content="TIL is an open-source project by Hashrocket that exists to catalogue the sharing & accumulation of knowledge as it happens day-to-day. Posts have a 200-word limit, and posting is open to any Rocketeer as well as select friends of the team. We hope you enjoy learning along with us.">
     <meta name="twitter:image" content="https://til.hashrocket.com/assets/til_twittercard.png">
 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js">
+
   </head>
 
   <body>
@@ -108,5 +111,6 @@
       </ul>
     </nav>
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+            <script>$(function() {hljs.initHighlighting() })</script>
   </body>
 </html>
