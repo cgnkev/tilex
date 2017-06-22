@@ -16,7 +16,7 @@ config :tilex, Tilex.Repo,
   adapter: Ecto.Adapters.Postgres,
   database: "tilex_test",
   hostname: "localhost",
-  ownership_timeout: 50000,
+  ownership_timeout: :infinity,
   pool: Ecto.Adapters.SQL.Sandbox
 
 config :wallaby, screenshot_on_failure: true
