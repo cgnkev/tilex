@@ -6,6 +6,6 @@ defmodule Tilex.FeedController do
     conn
     |> put_layout(:none)
     |> put_resp_content_type("application/xml")
-    |> render "index.xml", items: posts
+    |> render("index.xml", items: posts)
   end
 end
